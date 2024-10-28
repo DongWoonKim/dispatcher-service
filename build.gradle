@@ -31,7 +31,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.cloud:spring-cloud-function-context'
     implementation 'org.springframework.cloud:spring-cloud-stream-binder-rabbit'
-
+    implementation 'org.springframework.cloud:spring-cloud-stream'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
@@ -39,7 +39,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testImplementation 'io.projectreactor:reactor-test'
-
+    testImplementation 'org.springframework.cloud:spring-cloud-stream'
+    testImplementation 'org.springframework.cloud:spring-cloud-stream-test-binder'
 }
 
 dependencyManagement {
